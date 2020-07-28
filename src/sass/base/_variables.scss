@@ -1,0 +1,45 @@
+/* COLORS */
+$primary: #E9BD83;
+$primaryLight: rgba($primary, 0.5);
+$primaryDark: #1A1A1A;
+$dark: #121212;
+$white: #ffffff;
+
+$midgrey: #8E8E8E;
+$grey: #E7E7E7;
+$lightGrey: #F5F5F5;
+
+$success: #21DC8F;
+$error: #FF7A7A;
+$progress: #1AA0BF;
+
+/* RADIUS */
+$radius: 4px;
+$radiusTag: 16px;
+
+/* ZINDEX */
+$zindex : 10;
+$zindexLg : 100;
+
+/* BREAKING POINTS */
+$bp1: 480px;
+$bp2: 770px;
+$bp3: 960px;
+$bp4: 1280px;
+
+/* FONTS FAMILY */
+$mainfont: Roboto;
+
+/* FONTS WEIGHT */
+$bold: 700;
+$regular: 300;
+
+/* FONTS SIZE */
+$fs-xs: 1.2rem;
+$fs-sm: 1.4rem;
+$fs-rg: 1.6rem;
+$fs-md: 1.8rem;
+$fs-lg: 2.4rem;
+
+/* LINE HEIGHT */
+$lnReg: 1.4;

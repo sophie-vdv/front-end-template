@@ -1,0 +1,39 @@
+.text-right {
+  text-align: right;
+}
+
+.bd-b {
+  border-bottom: 1px solid $dark;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.centerFlex {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.hsplitCenterFlex {
+  display: flex !important;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hsplitFlex {
+  display: block;
+
+  @media screen and (min-width: $bp2) {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}

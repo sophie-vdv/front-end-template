@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue-Regular.eot');
+  src: url('../fonts/BebasNeue-Regular.woff2') format('woff2'), url('../fonts/BebasNeue-Regular.woff') format('woff'), url('../fonts/BebasNeue-Regular.ttf') format('ttf'), url('../fonts/BebasNeue-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'barlowmedium';
+  src: url('../fonts/barlow-medium-webfont.woff2') format('woff2'),
+  url('../fonts/barlow-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// FONT CLASS HELPERS
+.fs-xs {
+  font-size: $fs-xs;
+}
+
+.fs-sm {
+  font-size: $fs-sm;
+}
+
+.link {
+  color: $primary;
+  font-size: $fs-md;
+  font-weight: $bold;
+
+  &:hover {
+    color: $primary;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

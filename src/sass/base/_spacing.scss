@@ -1,0 +1,35 @@
+$spacer: 4px;
+$sides: (top, bottom, left, right);
+
+$spacing-1: $spacer * 1;
+$spacing-2: $spacer * 2;
+$spacing-3: $spacer * 3;
+$spacing-4: $spacer * 4;
+$spacing-5: $spacer * 5;
+$spacing-6: $spacer * 6;
+$spacing-7: $spacer * 7;
+$spacing-8: $spacer * 8;
+$spacing-9: $spacer * 9;
+$spacing-10: $spacer * 10;
+$spacing-11: $spacer * 11;
+$spacing-12: $spacer * 12;
+$spacing-13: $spacer * 13;
+$spacing-14: $spacer * 14;
+$spacing-15: $spacer * 15;
+$spacing-16: $spacer * 16;
+
+$spacing-20: $spacer * 20;
+
+
+// HELPERS CLASS
+@for $i from 0 to 22 {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$i} {
+      margin-#{$side}: ($i * $spacer);
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$i} {
+      padding-#{$side}: ($i * $spacer);
+    }
+  }
+}

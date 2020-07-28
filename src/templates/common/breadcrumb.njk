@@ -1,0 +1,42 @@
+<div class="breadcrumbHeader">
+    <ul class="breadcrumb-list">
+        <li>
+            <a href="#">
+                <span class="item">Home</span>
+                <span class="glyphicon glyphicon-menu-right"></span>
+            </a>
+        </li>
+
+        {% if dashboard %}
+            <li>
+                <a href="#">
+                    <span class="item">Dashboard</span>
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </a>
+            </li>
+        {% elif settings %}
+            <li>
+                <a href="#">
+                    <span class="item">Settings</span>
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </a>
+            </li>
+        {% else %}
+            <li>
+                <a href="#">
+                    <span class="item">Profil</span>
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </a>
+            </li>
+        {% endif %}
+
+        <li class="active">
+            <a href="#">
+                <span class="item">{{ user.name }}</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+

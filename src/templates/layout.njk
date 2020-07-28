@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Front-end boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Front-end boilerplate">
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"
+            integrity="sha256-ihAoc6M/JPfrIiIeayPE9xjin4UWjsx2mjW/rtmxLM4=" crossorigin="anonymous"></script>
+
+    <script src="js/main.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<!-- NAVIGATION -->
+{% include "common/navigation.njk" %}
+
+<!-- MAIN CONTENT -->
+{% block main %} {% endblock %}
+
+<!-- FOOTER -->
+{% include "common/footer.njk" %}
+
+</body>
+</html>
